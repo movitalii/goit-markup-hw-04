@@ -89,7 +89,7 @@ p {
     display: flex;
 }
 
-.site-nav .item + .item {
+.site-nav .item+.item {
     margin-left: 50px;
 }
 
@@ -121,7 +121,7 @@ p {
     display: flex;
 }
 
-.contacts .item + .item {
+.contacts .item+.item {
     margin-left: 30px;
 }
 
@@ -164,10 +164,10 @@ p {
     padding-bottom: 200px;
     text-align: center;
     background-color: var(--primary-footer-bg-color);
-    background-image:linear-gradient(to right,
+    background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-    url(../images/hero-background.jpg);
+        url(../images/hero-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -178,10 +178,10 @@ p {
     margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
-        
+
     width: 696px;
     color: var(--primary-white-color);
-   
+
     text-align: center;
     font-weight: 900;
     font-size: 44px;
@@ -268,9 +268,11 @@ button {
 .astronaut::before {
     background-image: url(../images/icons/astronaut.svg);
 }
-.rules .item + .item{
+
+.rules .item+.item {
     margin-left: 30px;
 }
+
 .section-rules .title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -309,7 +311,7 @@ button {
     display: flex;
 }
 
-.work .item + .item {
+.work .item+.item {
     margin-left: 30px;
 }
 
@@ -329,7 +331,7 @@ img {
     display: flex;
 }
 
-.team .mamber + .mamber {
+.team .mamber+.mamber {
     margin-left: 30px;
 }
 
@@ -338,6 +340,7 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+
 .section-team .title {
     margin-bottom: 50px;
     color: var(--title-text-color);
@@ -397,6 +400,7 @@ img {
 .socials.item:not(:last-child) {
     margin-right: 10px;
 }
+
 .socials.item {
     margin-bottom: 30px;
 }
@@ -440,6 +444,7 @@ img {
 .clients-link:focus {
     border-color: #2196F3;
 }
+
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
     fill: #2196F3;
@@ -449,7 +454,7 @@ img {
     fill: #AFB1B8;
 }
 
-.clients .item +.item {
+.clients .item+.item {
     margin-left: 30px;
 }
 
@@ -472,7 +477,7 @@ img {
     margin-right: 0;
     margin-bottom: 20px;
     padding: 0;
-   
+
 }
 
 .footer .adress {
@@ -483,16 +488,18 @@ img {
     line-height: 1.71;
 }
 
-.footer .list {
+.footer-list {
     padding: 0;
 }
+
 .footer .adress {
     margin-bottom: 9px;
 }
+
 .footer .link {
     display: inline-block;
     color: var(--primary-footer-text-color);
-    
+
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -504,9 +511,76 @@ img {
     color: var(--accent-color);
 }
 
-.footer .item:not(:last-child) {
+.footer-item:not(:last-child) {
     margin-bottom: 9px;
 }
+
+.footer .adress {
+    display: block;
+}
+
+.footer .container {
+    display: flex;
+}
+
+.join-list {
+    display: flex;
+}
+
+.join-footer .title {
+    margin-bottom: 20px;
+    
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.join-footer  {
+    margin-left: 70px;
+}
+
+.join-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+
+    background-color:rgba(255, 255, 255, 0.1);;
+    color: #FFFFFF;
+
+    border-radius: 50%;
+}
+
+.join-link:hover,
+.join-link:focus {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+.join.item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.join-icon {
+    fill: currentColor;
+}
+
+.container-footer {
+    align-items: baseline;
+}
+
 
 /* Портфолио */
 
@@ -529,7 +603,7 @@ img {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filter .item + .item {
+.filter .item+.item {
     margin-left: 8px;
 }
 
@@ -571,7 +645,7 @@ img {
 }
 
 .projects .title {
-     color: var(--title-text-color);
+    color: var(--title-text-color);
 
     font-weight: 700;
     font-size: 18px;
